@@ -1,0 +1,21 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": "kms:*",
+            "Principal": {
+                "AWS": "arn:aws:iam::${account_id}:root"
+            },
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": "kms:*",
+            "Principal": {
+                "AWS": "${owner}"
+            },
+            "Resource": "*"
+        }
+    ]
+}
