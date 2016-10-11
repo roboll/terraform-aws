@@ -10,7 +10,7 @@ provider aws {
 }
 
 resource aws_key_pair ssh {
-    key_name = "${var.env}-${var.default}"
+    key_name = "${var.env}-${var.name}"
     public_key = "${var.public_key}"
 }
 
