@@ -1,4 +1,4 @@
-# terraform-aws
+# tf-aws
 
 Terraform modules for AWS resources
 
